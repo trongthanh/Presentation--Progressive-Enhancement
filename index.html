@@ -1,12 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	<title>Shower Presentation Engine</title>
+	<title>Progressive Enhancement - An Introduction</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=792, user-scalable=no">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<link rel="stylesheet" href="shower/themes/bright/styles/screen.css">
 	<style>
+		.full .slide {
+			display: none;
+		}
+
+		.full .slide:target {
+			display: block;
+		}
+
+
 		.slide .bg-cover img {
 			position: static;
 			height: 100%;
@@ -23,29 +32,52 @@
 			width: 100%;
 			text-align: center;
 		}
+
+		/* support 1 line for now */
+		.cover .subtitle {
+			box-sizing: border-box;
+			position: absolute;
+			padding: 0.9em 4em;
+			width: 100%;
+			height: 3em;
+			bottom: 0;
+			left: 0;
+			text-align: center;
+			line-height: 1.5;
+			margin: 0;
+			background: rgba(255, 255, 255, 0.5);
+		}
+
+		.cover .subtitle a {
+			color: #034577;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		small {
+			font-size: 0.8em;
+		}
 	</style>
 </head>
 <body class="list">
 	<header class="caption">
 		<h1>Progressive Enhancement</h1>
-		<p>presented by Tran Trong Thanh, Nau Studio</p>
+		<p>Retold by Tran Trong Thanh, Nau Studio</p>
 	</header>
-	<section class="slide cover"><div>
-		<p>Retold by <a href="https://twitter.com/trongthanh">Tran Trong Thanh</a> - <a href="http://naustud.io">Nau Studio</a></p>
-
-		<div class="bg-cover">
-			<img src="pictures/page-0.jpg" alt="">
-		</div>
-		<style>
-
-		</style>
+	<section class="slide"><div>
+		<p style="margin-left:-17px"><img src="pictures/logo.svg" alt="" height="100"></p>
+		<h2>Progressive Enhancement</h2>
+		<h1>Sự Cải Tiến Tăng Dần</h1>
+		<p>Trình bày: Trần Trọng Thanh</p>
 	</div></section>
-
+	<section class="slide"><div>
+		<h3>Closely based on the presentation:</h3>
+		<img src="pictures/page-0.jpg" alt="" height="400">
+	</div></section>
 	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-1.jpg" alt=""></div>
-	</div></section>
-	<section class="slide cover"><div>
-		<div class="bg-cover"><img src="pictures/page-2.jpg" alt=""></div>
 	</div></section>
 	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-3.jpg" alt=""></div>
@@ -101,11 +133,15 @@
 	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-20.jpg" alt=""></div>
 	</div></section>
-	<section class="slide cover"><div>
-		<div class="bg-cover"><img src="pictures/page-21.jpg" alt=""></div>
+	<section class="slide"><div>
+		<h2>How about now?</h2>
 	</div></section>
 	<section class="slide cover"><div>
-		<div class="bg-cover"><img src="pictures/page-22.jpg" alt=""></div>
+		<div class="bg-cover"><img src="pictures/best-view-2015.png" alt=""></div>
+	</div></section>
+	<section class="slide cover"><div>
+		<div class="bg-cover"><img src="pictures/page-21.jpg" alt=""></div>
+		<p class="subtitle">* Sự Giảm Chất Từ Từ</p>
 	</div></section>
 	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-23.jpg" alt=""></div>
@@ -120,16 +156,20 @@
 		<div class="bg-cover"><img src="pictures/page-26.jpg" alt=""></div>
 	</div></section>
 	<section class="slide cover"><div>
+		<div class="bg-cover"><img src="pictures/graceful-degradation-2015.png" alt=""></div>
+		<p class="subtitle">Graceful Degradation of Webkit Era</p>
+	</div></section>
+	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-27.jpg" alt=""></div>
 	</div></section>
 	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-28.jpg" alt=""></div>
 	</div></section>
 	<section class="slide cover"><div>
-		<div class="bg-cover"><img src="pictures/page-29.jpg" alt=""></div>
+		<div class="bg-cover"><img src="pictures/page-29-new.png" alt=""></div>
 	</div></section>
 	<section class="slide cover"><div>
-		<div class="bg-cover"><img src="pictures/page-30.jpg" alt=""></div>
+		<div class="bg-cover"><img src="pictures/page-30-new.png" alt=""></div>
 	</div></section>
 	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-31.jpg" alt=""></div>
@@ -175,6 +215,7 @@
 	</div></section>
 	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-45.jpg" alt=""></div>
+		<p class="subtitle"><small>* Dr. Horrible (in TV show of same name)</small></p>
 	</div></section>
 	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-46.jpg" alt=""></div>
@@ -219,13 +260,40 @@
 		<div class="bg-cover"><img src="pictures/page-59.jpg" alt=""></div>
 	</div></section>
 	<section class="slide cover"><div>
-		<div class="bg-cover"><img src="pictures/page-60.jpg" alt=""></div>
+		<div class="bg-cover"><img src="pictures/page-60-bullshit.gif" alt=""
+			style="height: auto;margin-top: 3%;width: 100%;"></div>
 	</div></section>
 	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-61.jpg" alt=""></div>
 	</div></section>
 	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-62.jpg" alt=""></div>
+		<img class="page-62__img-1 next" src="pictures/page-62-01.jpg" alt="">
+		<img class="page-62__img-2 next" src="pictures/page-62-02.jpg" alt="">
+		<img class="page-62__img-3 next" src="pictures/page-62-03.jpg" alt="">
+		<style>
+			.slide.cover .page-62__img-1 {
+				z-index: 1;
+				left: 9%;
+				top: 34%;
+				height: 40%;
+			}
+			.slide.cover .page-62__img-2 {
+				z-index: 2;
+				left: 33%;
+				top: 34%;
+				height: 40%;
+			}
+			.slide.cover .page-62__img-3 {
+				z-index: 3;
+				right: 9%;
+				top: 34%;
+				left: auto;
+				height: 40%;
+			}
+
+		</style>
+
 	</div></section>
 	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-63.jpg" alt=""></div>
@@ -278,7 +346,7 @@
 	</div></section>
 	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/same-exp-nope.png" alt=""></div>
-		<h2>http://dowebsitesneedtobeexperiencedexactlythesameineverybrowser.com/</h2>
+		<p class="subtitle"><a href="http://dowebsitesneedtobeexperiencedexactlythesameineverybrowser.com/">http://dowebsitesneedtobeexperiencedexactlythesameineverybrowser.com/</a></p>
 	</div></section>
 	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-78.jpg" alt=""></div>
@@ -288,15 +356,67 @@
 	</div></section>
 	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-80.jpg" alt=""></div>
+		<img class="page-80__img-1 next" src="pictures/page-80_01.jpg" alt="HMTL">
+		<img class="page-80__img-2 next" src="pictures/page-80_02.jpg" alt="CSS">
+		<img class="page-80__img-3 next" src="pictures/page-80_03.jpg" alt="JS">
+		<style>
+			.slide.cover .page-80__img-1 {
+				z-index: 1;
+				left: 29%;
+				top: 71%;
+				width: 18em;
+			}
+			.slide.cover .page-80__img-2 {
+				z-index: 2;
+				left: 29%;
+				top: 60%;
+				width: 18em;
+			}
+			.slide.cover .page-80__img-3 {
+				z-index: 3;
+				left: 29%;
+				top: 48.7%;
+				width: 18em;
+			}
+		</style>
 	</div></section>
 	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-81.jpg" alt=""></div>
+		<img class="page-81__img-1 next" src="pictures/page-81_01.jpg" alt="HMTL">
+		<img class="page-81__img-2 next" src="pictures/page-81_02.jpg" alt="Basic JS CSS">
+		<img class="page-81__img-3 next" src="pictures/page-81_03.jpg" alt="Nice JS CSS">
+		<img class="page-81__img-4 next" src="pictures/page-81_04.jpg" alt="OMG JS CSS">
+		<style>
+			.slide.cover .page-81__img-1 {
+				z-index: 1;
+				left: 29%;
+				top: 71%;
+				width: 18em;
+			}
+			.slide.cover .page-81__img-2 {
+				z-index: 2;
+				left: 29%;
+				top: 60.2%;
+				width: 18em;
+			}
+			.slide.cover .page-81__img-3 {
+				z-index: 3;
+				left: 29%;
+				top: 49.4%;
+				width: 18em;
+			}
+			.slide.cover .page-81__img-4 {
+				z-index: 3;
+				left: 29%;
+				top: 3%;
+				width: 18em;
+			}
+		</style>
+
 	</div></section>
 	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-82.jpg" alt=""></div>
-	</div></section>
-	<section class="slide cover"><div>
-		<div class="bg-cover"><img src="pictures/page-83.jpg" alt=""></div>
+		<p class="subtitle">*<small>Evergreen browsers are ones that have auto update.</small></p>
 	</div></section>
 	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-84.jpg" alt=""></div>
@@ -310,6 +430,19 @@
 	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-87.jpg" alt=""></div>
 	</div></section>
+	<section class="slide"><div>
+		<h2>Browser Capabilities 2015</h2>
+		<table>
+			<tr>
+				<td>Animations</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+			</tr>
+		</table>
+
+	</div></section>
 	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-88.jpg" alt=""></div>
 	</div></section>
@@ -318,12 +451,10 @@
 	</div></section>
 	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-90.jpg" alt=""></div>
+		<p class="subtitle">Note: Statistics as of 2012!</p>
 	</div></section>
 	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-91.jpg" alt=""></div>
-	</div></section>
-	<section class="slide cover"><div>
-		<div class="bg-cover"><img src="pictures/page-92.jpg" alt=""></div>
 	</div></section>
 	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-93.jpg" alt=""></div>
@@ -367,11 +498,29 @@
 	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-106.jpg" alt=""></div>
 	</div></section>
-	<section class="slide cover"><div>
-		<div class="bg-cover"><img src="pictures/page-107.jpg" alt=""></div>
-	</div></section>
-	<section class="slide cover"><div>
-		<div class="bg-cover"><img src="pictures/page-108.jpg" alt=""></div>
+	<section class="slide"><div>
+		<img class="avg-user pic-01" src="pictures/average-users.jpg" alt="">
+		<img class="avg-user pic-02" src="pictures/chrome_128x128.png" alt="">
+		<img class="avg-user pic-03" src="pictures/internet-explorer_128x128.png" alt="">
+		<style>
+			.avg-user {
+				position: absolute;
+			}
+			.pic-01 {
+				height: 100%;
+				top: 0;
+				left: 17%;
+			}
+			.pic-02 {
+				bottom: 1em;
+				left: 8em;
+			}
+			.pic-03 {
+				bottom: 1em;
+				left: 28em;
+			}
+
+		</style>
 	</div></section>
 	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-109.jpg" alt=""></div>
@@ -380,20 +529,57 @@
 		<div class="bg-cover"><img src="pictures/page-110.jpg" alt=""></div>
 	</div></section>
 	<section class="slide cover"><div>
-		<div class="bg-cover"><img src="pictures/page-111.jpg" alt=""></div>
-	</div></section>
-	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-112.jpg" alt=""></div>
 	</div></section>
 	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-113.jpg" alt=""></div>
 	</div></section>
 	<section class="slide cover"><div>
-		<div class="bg-cover"><img src="pictures/page-114.jpg" alt=""></div>
-	</div></section>
-	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-115.jpg" alt=""></div>
 	</div></section>
+	<section class="slide cover"><div>
+		<div class="bg-cover"><img src="pictures/page-30-new.png" alt=""></div>
+		<p class="subtitle">Nau Studio's background live stream</p>
+	</div></section>
+
+	<section class="slide"><div>
+		<h3 class="dateinput-title">The Date Input</h3>
+		<img class="dateinput dateinput-1" src="pictures/date-input-ios.jpg" alt="">
+		<img class="dateinput dateinput-2" src="pictures/date-input-chrome.png" alt="">
+		<img class="dateinput dateinput-3" src="pictures/date-input-firefox.png" alt="">
+		<img class="dateinput dateinput-4" src="pictures/date-input-support-status.png" alt="">
+		<style>
+			.dateinput-title {
+				position: absolute;
+				top: 1.5em;
+				left: 12em;
+			}
+			.dateinput {
+				position: absolute;
+			}
+			.dateinput-1 {
+				height: 50%;
+				top: 2em;
+				left: 2em;
+			}
+			.dateinput-2 {
+				height: 40%;
+				left: 12em;
+				top: 5em;
+			}
+			.dateinput-3 {
+				height: 40%;
+				right: 2em;
+				bottom: 8em;
+			}
+			.dateinput-4 {
+				height: 17%;
+  				bottom: 2em;
+			}
+		</style>
+
+	</div></section>
+
 	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-116.jpg" alt=""></div>
 	</div></section>
@@ -418,24 +604,21 @@
 	<section class="slide cover"><div>
 		<div class="bg-cover"><img src="pictures/page-123.jpg" alt=""></div>
 	</div></section>
-	<section class="slide cover"><div>
-		<div class="bg-cover"><img src="pictures/page-124.jpg" alt=""></div>
-	</div></section>
 
-	<section class="slide shout" id="SeeMore"><div>
-		<h2><img src="pictures/logo.svg" alt=""> <a href="https://github.com/shower/shower">See more on GitHub</a></h2>
-		<style>
-			#Picture h2 {
-				color:#FFF;
-				}
-			#SeeMore h2 {
-				font-size:100px
-				}
-			#SeeMore img {
-				width:0.72em;
-				height:0.72em;
-				}
-		</style>
+	<section class="slide" id="SeeMore"><div>
+		<h2>Further reading</h2>
+		<ul>
+			<li><a href="http://www.digital-web.com/articles/fluid_thinking">Thoughts About Graceful Degradation</a></li>
+			<li><a href="http://www.smashingmagazine.com/2009/04/22/progressive-enhancement-what-it-is-and-how-to-use-it/">Progressive Enhancement: What It Is, And How To Use It?</a>
+			<li><a href="http://alistapart.com/article/understandingprogressiveenhancement">Understanding Progressive Enhancement</a>
+			<li><a href="http://wtfforms.com/">Progressive Enhancement with Custom Form Inputs</a></li>
+		</ul>
+	</div></section>
+	<section class="slide shout"><div>
+		<h2>Q&A</h2>
+	</div></section>
+	<section class="slide shout"><div>
+		<h2>Thank you!</h2>
 	</div></section>
 
 	<div class="progress"><div></div></div>
